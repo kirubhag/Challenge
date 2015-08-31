@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ccc;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-size: 14px;
+}
+
+input {
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    outline-offset: 0;
+    border-bottom: 1px solid #307fed;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #FFF;
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+
+.sign-up-wrap {
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    background: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+
+.ui-wrap {
+    padding-left: 56px;
+    padding-top: 60px;
+}
+
+.ui-wrap h3 {
+    color: #307fed;
+    font-size: 18px;
+}
+
+.sign-ui {
+    padding-top: 16px;
+    padding-left: 24px;
+}
+
+.form-fields {
+    padding: 10px 0;
+}
+
+.form-fields input {
+    height: 30px;
+    width: 250px;
+}
+
+.ui-ctrls{
+    padding-top: 16px;
+}
+
+.btn {
+    padding: 8px 15px;
+    width: 50px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.btn-primary {
+    background-color: #307fed;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+
+	<include file="struts-ui.xml" />
+	<package name="default" namespace="/tutorials" extends="struts-default">
+		<action name="getTutorial" class="action.kirubha.com.TutorialAction">
+			<result name="success">/views/tutorialList.jsp</result>
+		</action>
+		<action name="search" class="action.kirubha.com.SearchFormAction">
+			<result name="success">/views/searchForm.jsp</result>
+		</action>
+	</package>
+
+	<package name="json" extends="struts-default">
+		<action name="getUserList" class="action.kirubha.com.UserList">
+			<result name="success">/views/searchForm.jsp</result>
+		</action>
+	</package>
+	<package name="userModel" namespace="/user" extends="struts-default">
+		<action name="*" class="action.kirubha.com.UserAction" method="{1}UserDetails">
+			<result name="success">/views/searchForm.jsp</result>
+		</action>
+	</package>
+</struts>
